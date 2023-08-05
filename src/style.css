@@ -13,3 +13,38 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
 }
+
+button.btn {
+    font-family: inherit;
+    font-size: 0.875rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    padding: 0 1.25rem;
+    line-height: 2.375rem;
+    margin: 0.25rem;
+    transition: color 0.25s, border-color 0.25s, background-color 0.25s;
+}
+
+button.btn--primary {
+    background-color: #646cff;
+    border: 1px solid #747bff;
+    color: #ffffff;
+}
+
+button.btn--primary:hover {
+    background-color: #747bff;
+    border-color: #747bff;
+    color: #ffffff;
+}
+
+button.btn--secondary {
+    background-color: #313136;
+    border: 1px solid #525259ad;
+    color: #ffffff;
+}
+
+button.btn--secondary:hover {
+    background-color: #2c2c30;
+    border-color: #525259ad;
+    color: #ffffff;
+}
