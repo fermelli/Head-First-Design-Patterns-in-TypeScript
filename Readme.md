@@ -67,3 +67,23 @@ yarn dev
 ## Contacto
 
 -   [GitHub - fermelli](https://github.com/fermelli)
+
+## Contenido
+
+### 1. Strategy Pattern
+
+#### Mini Duck Simulator
+
+-   Referencia en el libro: `Pag. 2`
+-   Código: [Mini Duck Simulator](src/01-the-strategy-pattern/mini-duck-simulator)
+-   Esquema UML:
+
+![Mini Duck Simulator UML](/src/01-the-strategy-pattern/mini-duck-simulator/uml/mini-duck-simulator-uml.png)
+
+#### Game Adventure
+
+-   Referencia en el libro: `Pag. 25`
+-   Código: [Game Adventure](src/01-the-strategy-pattern/game-adventure)
+-   Esquema UML:
+
+![Game Adventure UML](/src/01-the-strategy-pattern/game-adventure/uml/game-adventure-uml.png)
