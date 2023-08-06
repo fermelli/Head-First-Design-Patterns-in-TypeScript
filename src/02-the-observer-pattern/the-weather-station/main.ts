@@ -2,6 +2,7 @@ import { WeatherData } from "./class-weather-data";
 import {
     CurrentConditionsDisplay,
     ForecastDisplay,
+    HeatIndexDisplay,
     StatisticsDisplay,
 } from "./classes-displays";
 
@@ -11,6 +12,7 @@ export const weatherStation = (element: HTMLButtonElement) => {
     new CurrentConditionsDisplay(weatherData);
     new StatisticsDisplay(weatherData);
     new ForecastDisplay(weatherData);
+    new HeatIndexDisplay(weatherData);
 
     element.addEventListener("click", () => {
         const temperatureRandom: number = Math.floor(Math.random() * 40);
