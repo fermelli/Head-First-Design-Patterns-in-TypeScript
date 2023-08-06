@@ -87,3 +87,13 @@ yarn dev
 -   Esquema UML:
 
 ![Game Adventure UML](/src/01-the-strategy-pattern/game-adventure/uml/game-adventure-uml.png)
+
+### 2. Observer Pattern
+
+#### The Weather Station
+
+-   Referencia en el libro: `Pag. 39`
+-   Código: [The Weather Station](src/02-the-observer-pattern/the-weather-station)
+-   Esquema UML:
+
+![The Weather Station UML](/src/02-the-observer-pattern/the-weather-station/uml/the-weather-station-uml.png)
