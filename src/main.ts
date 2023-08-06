@@ -15,6 +15,14 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
         <button id="js-run-game-adventure" class="btn btn--primary">Run Game Adventure</button> <br />
         <div id="js-game-adventure-buttons" style="display: none;"></div>
     </div>
+
+    <div>
+        <h2>Observer Pattern</h2>
+
+        <h3>The Weather Station</h3>
+        <small>Open the console to see the output</small> <br />
+        <button id="js-run-weather" class="btn btn--primary">Run Weather Station</button>
+    </div>
 `;
 
 window.addEventListener("load", () => {
@@ -37,6 +45,14 @@ window.addEventListener("load", () => {
                 document.querySelector<HTMLDivElement>(
                     "#js-game-adventure-buttons"
                 )!
+            );
+        }
+    );
+
+    import("./02-the-observer-pattern/the-weather-station/main").then(
+        ({ weatherStation }) => {
+            weatherStation(
+                document.querySelector<HTMLButtonElement>("#js-run-weather")!
             );
         }
     );
