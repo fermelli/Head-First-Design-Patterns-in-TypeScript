@@ -97,3 +97,13 @@ yarn dev
 -   Esquema UML:
 
 ![The Weather Station UML](/src/02-the-observer-pattern/the-weather-station/uml/the-weather-station-uml.png)
+
+### 3. Decorator Pattern
+
+#### Starbuzz Coffee
+
+-   Referencia en el libro: `Pag. 80`
+-   Código: [Starbuzz Coffee](src/03-the-decorator-pattern/starbuzz-coffee)
+-   Esquema UML:
+
+![Starbuzz Coffee UML](/src/03-the-decorator-pattern/starbuzz-coffee/uml/starbuzz-coffee-uml.png)
