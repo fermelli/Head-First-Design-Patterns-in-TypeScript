@@ -23,6 +23,16 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = /*html*/ `
         <small>Open the console to see the output</small> <br />
         <button id="js-run-weather" class="btn btn--primary">Run Weather Station</button>
     </div>
+
+    <div>
+        <h2>Decorator Pattern</h2>
+
+        <h3>Starbuzz Coffee</h3>
+        <small>Open the console to see the output</small> <br />
+        <button id="js-run-starbuzz-coffee" class="btn btn--primary">Run Starbuzz Coffee</button> <br />
+        <div id="js-beverages"></div>
+        <div id="js-condiments"></div>
+    </div>
 `;
 
 window.addEventListener("load", () => {
@@ -53,6 +63,18 @@ window.addEventListener("load", () => {
         ({ weatherStation }) => {
             weatherStation(
                 document.querySelector<HTMLButtonElement>("#js-run-weather")!
+            );
+        }
+    );
+
+    import("./03-the-decorator-pattern/starbuzz-coffee/main").then(
+        ({ starbuzzCoffee }) => {
+            starbuzzCoffee(
+                document.querySelector<HTMLButtonElement>(
+                    "#js-run-starbuzz-coffee"
+                )!,
+                document.querySelector<HTMLDivElement>("#js-beverages")!,
+                document.querySelector<HTMLDivElement>("#js-condiments")!
             );
         }
     );
